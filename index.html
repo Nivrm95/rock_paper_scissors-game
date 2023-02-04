@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- ***********top************** -->
+  <div class="containerTop">
+    <header>
+      <div class="logoGame">
+        <img class="logo" src="./images/logo.svg" alt="logoGame">
+      </div>
+
+      <div class="counter">
+        <h2>SCORE</h2>
+        <p class="number">0</p>
+      </div>
+    </header>
+  </div>
+
+  <!-- ***********main************** -->
+  <div id="containerMain" class="container">
+
+    <div class="triangular" id="firstMain">
+      <img class="triangularImg" src="/images/bg-triangle.svg" alt="triangular">
+      <div class="leftBtn">
+        <button class="button paperButton" id="iconButton">
+          <img class="iconImg" src="./images/icon-paper.svg" alt="paper">
+        </button>
+      </div>
+
+      <div class="rightBtn">
+        <button class="button rockButton" id="iconButton">
+          <img class="iconImg" src="/images/icon-rock.svg" alt="rock">
+        </button>
+      </div>
+
+      <div class="downBtn">
+        <button class="button scissorsButton" id="iconButton">
+          <img class="iconImg" src="/images/icon-scissors.svg" alt="scissors">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="containerBattle" class="container none">
+    <div class="player relative">
+      <h3>You Picked</h3>
+    </div>
+
+    <div class="middle">
+      <div class="status">
+
+      </div>
+
+      <button class="playAgainBtn" onclick="playAgain()">Play again</button>
+    </div>
+    <div class="computer relative">
+      <h3>The House Picked</h3>
+
+    </div>
+
+
+  </div>
+
+  <!-- ***********down************** -->
+  <div class="containerDown">
+    <div class="rulesBox">
+      <button id="rulesButton">RULES</button>
+    </div>
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Niv Ram</a>.
+      </div>
+    </footer>
+  </div>
+
+
+  <!-- Modal -->
+  <div id="rulesModal" class="close-modal">
+    <div class="rulesTitel">RULES
+      <span id="close">&times;</span>
+    </div>
+    <img class="imgRuels" src="/images/image-rules.svg" alt="rules">
+  </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
