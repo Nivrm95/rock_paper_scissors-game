@@ -1,0 +1,287 @@
+body {
+  background-image: linear-gradient(
+    to right,
+    rgba(9, 2, 37, 0.929),
+    rgb(39, 24, 99),
+    rgba(8, 2, 32, 0.929)
+  );
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+/**********top************/
+.containerTop {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  margin-top: 25px;
+}
+header {
+  border: 2px rgba(243, 248, 245, 0.449) solid;
+  border-radius: 10px;
+  width: 450px;
+  height: 80px;
+  color: aliceblue;
+  padding: 3%;
+  margin: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  width: 100px;
+  height: 60px;
+}
+.counter {
+  display: flex;
+  width: 90px;
+  height: 80px;
+  background-color: rgba(240, 248, 255, 0.967);
+  border-radius: 8%;
+  color: black;
+  padding: 0%;
+  margin: 0%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  font-size: 10px;
+  font-weight: 800;
+  color: rgb(18, 21, 224);
+}
+.number {
+  font-size: xx-large;
+  font-weight: 800;
+  margin: 0%;
+  color: rgba(84, 81, 81, 0.997);
+}
+
+/**********main************/
+/* #containerMain {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+  position: relative;
+  height: 200px;
+} */
+.triangular {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.triangularImg {
+  width: 150px;
+  height: 150px;
+}
+
+/* icons */
+
+.iconImg {
+  width: 35px;
+  height: 40px;
+}
+
+.paperButton {
+  border: 12px solid rgb(67, 67, 218);
+  box-shadow: inset 0em 0.3em rgba(0, 0, 0, 0.2);
+}
+.rockButton {
+  border: 12px solid rgb(202, 35, 49);
+  box-shadow: inset 0em 0.3em rgba(0, 0, 0, 0.2);
+}
+
+.button {
+  background-color: aliceblue;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.leftBtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.rightBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.downBtn {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.scissorsButton {
+  border: 12px solid rgb(218, 176, 11);
+  box-shadow: inset 0em 0.3em rgba(0, 0, 0, 0.2);
+  bottom: 50px;
+  left: 50%;
+}
+
+/********** rule **************/
+/* modal */
+#rulesModal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 311px;
+  height: 312px;
+  gap: 5px;
+}
+.close-modal {
+  display: none;
+  padding: 5%;
+  gap: 10px;
+}
+.open-modal {
+  display: block;
+  position: absolute;
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+.rulesTitel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(36, 36, 174);
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+#close {
+  color: rgb(137, 142, 146);
+  font-size: 30px;
+  font-weight: 200;
+}
+
+/* secoundMain */
+#childMainScreen {
+  position: absolute;
+  left: 40%;
+  height: 200px;
+  width: 400px;
+}
+
+/**********bottom************/
+.rulesBox {
+  position: absolute;
+  bottom: 30px;
+  right: 60px;
+}
+#rulesButton {
+  background-color: Transparent;
+  border: 1px aliceblue solid;
+  color: antiquewhite;
+  border-radius: 2px;
+  padding-left: 45%;
+  padding-right: 45%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  font-size: 10px;
+  font-weight: 200;
+}
+footer {
+  background-color: rgb(191, 196, 214);
+  width: 100%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  color: hsl(240, 3%, 7%);
+  position: fixed;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(229, 88%, 32%);
+}
+
+.none {
+  display: none !important;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  /* padding: 5%; */
+  position: relative;
+  height: 200px;
+  margin-left: 25px;
+  align-items: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.status {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.playAgainBtn {
+  background-color: white;
+  color: red;
+  border: none;
+  padding: 5px 10px;
+  border-radius:5px;
+  width: 150px;
+}
+
+#containerBattle > * {
+  /* margin-right: 30px; */
+  align-items: flex-start
+  
+}
+
+.middle{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3{
+  color: aliceblue;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: small;
+}
+
+@media only screen and (max-width: 391px) {
+  body{
+    justify-content: space-around;
+  }
+  .middle{
+    position: absolute;
+    bottom: -80px;
+  }
+  .container{
+    margin-bottom: 250px;
+  }
+  .rulesBox{
+    bottom: 191px;
+    right: 182px;
+  }
+}
